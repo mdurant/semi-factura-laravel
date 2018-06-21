@@ -114,6 +114,7 @@
             self.price = '';
 
             __calculate();
+            $('#product').focus();
         }
 
         __save() {
@@ -152,8 +153,9 @@
                 },
                 getValue: 'name',
                 list: {
-                    onClickEvent: function() {
+                    onKeyEnterEvent: function() {
                         var e = client.getSelectedItemData();
+                        $("#product").focus();
                         self.client_id = e.id;
                         self.ruc = e.ruc;
                         self.address = e.address;
@@ -174,8 +176,9 @@
                 },
                 getValue: 'name',
                 list: {
-                    onClickEvent: function() {
+                    onKeyEnterEvent: function() {
                         var e = product.getSelectedItemData();
+                        $("#quantity").focus();
                         self.product_id = e.id;
                         self.price = e.price;
 

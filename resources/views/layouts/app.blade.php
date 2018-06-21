@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="<?php echo csrf_token() ?>"/>
 
-    <title>Laravel</title>
+    <title>Sistema de Control de Gestión</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
@@ -42,15 +42,19 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    Gestión
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/invoice') }}">Invoices</a></li>
+                    <li><a href="{{ url('/invoice') }}">Compras</a></li>
+                    <li><a href="{{ url('/invoice') }}">Ventas</a></li>
+                    <li><a href="{{ url('/invoice') }}">Operaciones</a></li>
+                    <li><a href="{{ url('/invoice') }}">Producción</a></li>
+                    <li><a href="{{ url('/invoice') }}">Informes</a></li>
+                    <li><a href="{{ url('/invoice') }}">Sistema</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -81,8 +85,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="{{asset('ini.js')}}"></script>
-    <script src="{{asset('bower_components/riot/riot.min.js')}}"></script>
-    <script src="{{asset('bower_components/riot/riot+compiler.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.6.8/riot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.6.8/riot+compiler.min.js"></script>
     <script src="{{asset('bower_components/EasyAutocomplete//dist/jquery.easy-autocomplete.min.js')}}"></script>
 
     @yield('bottom')
